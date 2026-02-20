@@ -165,11 +165,6 @@ export function AboutClient() {
                   <h3 className="text-white font-semibold text-lg mb-0.5">{m.name}</h3>
                   <p className="text-[#ff7b54] text-sm font-medium mb-3">{m.role}</p>
                   <p className="text-gray-400 text-sm leading-relaxed flex-1">{m.bio}</p>
-                  <div className="flex gap-2 mt-5">
-                    {m.socials.linkedin && <a href={m.socials.linkedin} className="w-8 h-8 rounded-lg bg-white/[0.06] hover:bg-[#ff7b54]/20 border border-white/[0.08] flex items-center justify-center text-gray-400 hover:text-[#ff7b54] transition-all"><Linkedin className="w-3.5 h-3.5" /></a>}
-                    {m.socials.twitter && <a href={m.socials.twitter} className="w-8 h-8 rounded-lg bg-white/[0.06] hover:bg-[#ff7b54]/20 border border-white/[0.08] flex items-center justify-center text-gray-400 hover:text-[#ff7b54] transition-all"><Twitter className="w-3.5 h-3.5" /></a>}
-                    {m.socials.github && <a href={m.socials.github} className="w-8 h-8 rounded-lg bg-white/[0.06] hover:bg-[#ff7b54]/20 border border-white/[0.08] flex items-center justify-center text-gray-400 hover:text-[#ff7b54] transition-all"><Github className="w-3.5 h-3.5" /></a>}
-                  </div>
                 </motion.div>
               );
             })}
