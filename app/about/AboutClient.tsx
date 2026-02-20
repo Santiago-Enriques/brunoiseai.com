@@ -27,7 +27,7 @@ type TeamMember = {
   };
 };
 
-const team = [
+const team: TeamMember[] = [
   { name: 'QuailR2', role: 'CEO & Lead Developer', bio: 'Raised from a hispanic background, Quail wants to reinvent the app store. He wants to do this step by step. He is starting off with a cooking app.', initials: 'Q2', gradient: 'from-[#110082] to-[#8C00FF]', linkedin: '#', twitter: '#' }
 ];
 
