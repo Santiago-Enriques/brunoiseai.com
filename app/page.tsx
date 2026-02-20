@@ -288,7 +288,7 @@ function Stats() {
 
 // ─── Team ──────────────────────────────────────────────────────────────────
 const team = [
-  { name: 'QuailR2', role: 'CEO & Lead Developer', bio: 'Raised from a hispanic background, Quail wants to reinvent the app store. He wants to do this step by step. He is starting off with a cooking app.', initials: 'Q2', gradient: 'from-[#ff7b54] to-[#ff9f7a]', linkedin: '#', twitter: '#' },
+  { name: 'QuailR2', role: 'CEO & Lead Developer', bio: 'Raised from a hispanic background, Quail wants to reinvent the app store. He wants to do this step by step. He is starting off with a cooking app.', initials: 'Q2', gradient: 'from-[#ff7b54] to-[#ff9f7a]', linkedin: '#', twitter: '#' }
 ];
 
 function TeamCard({ member, index }: { member: typeof team[0]; index: number }) {
