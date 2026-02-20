@@ -15,10 +15,7 @@ const values = [
 ];
 
 const team = [
-  { name: 'Sofia Reyes', role: 'CEO & Co-Founder', bio: 'Former product lead at a top nutrition startup. Passionate about making healthy eating effortless through AI.', initials: 'SR', gradient: 'from-[#ff7b54] to-[#ff9f7a]', socials: { linkedin: '#', twitter: '#' } },
-  { name: 'Daniel Park', role: 'CTO & Co-Founder', bio: 'ML engineer with a decade of experience building recommendation systems. Obsessed with performance and clean code.', initials: 'DP', gradient: 'from-[#e05a35] to-[#ff7b54]', socials: { linkedin: '#', github: '#' } },
-  { name: 'Camille Fontaine', role: 'Head of Nutrition Science', bio: 'Registered dietitian and sports nutritionist. Ensures every meal plan Brunoise AI generates is backed by real science.', initials: 'CF', gradient: 'from-[#ff9f7a] to-[#ffb899]', socials: { linkedin: '#', twitter: '#' } },
-  { name: 'Marcus Webb', role: 'Lead Designer', bio: 'Product designer focused on health & wellness apps. Believes great design should get out of the way and let people thrive.', initials: 'MW', gradient: 'from-[#c94e2e] to-[#e06040]', socials: { linkedin: '#', twitter: '#' } },
+  { name: 'QuailR2', role: 'CEO & Lead Developer', bio: 'Raised from a hispanic background, Quail wants to reinvent the app store. He wants to do this step by step. He is starting off with a cooking app.', initials: 'Q2', gradient: 'from-[#110082] to-[#8C00FF]', linkedin: '#', twitter: '#' }
 ];
 
 const milestones = [
