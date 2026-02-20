@@ -14,6 +14,19 @@ const values = [
   { icon: Globe, title: 'Global Palate', desc: '300+ recipes from 15+ world cuisines. Nutrition doesn\'t have to be boring chicken and rice.' },
 ];
 
+type TeamMember = {
+  name: string;
+  role: string;
+  bio: string;
+  initials: string;
+  gradient: string;
+  socials: {
+    linkedin?: string;
+    twitter?: string;
+    github?: string;
+  };
+};
+
 const team = [
   { name: 'QuailR2', role: 'CEO & Lead Developer', bio: 'Raised from a hispanic background, Quail wants to reinvent the app store. He wants to do this step by step. He is starting off with a cooking app.', initials: 'Q2', gradient: 'from-[#110082] to-[#8C00FF]', linkedin: '#', twitter: '#' }
 ];
