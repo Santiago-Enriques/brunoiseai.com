@@ -22,7 +22,7 @@ import {
 // ─── Shared animation variants ─────────────────────────────────────────────
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 const stagger = {
@@ -151,7 +151,7 @@ function FeatureCard({ feature, index }: { feature: typeof features[0]; index: n
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] as const }}
       whileHover={{ y: -6, transition: { duration: 0.2 } }}
       className="p-7 rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] hover:border-[#ff7b54]/30 transition-colors group"
     >
@@ -176,7 +176,7 @@ function Features() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
         >
           <motion.span className="inline-block text-[#ff7b54] text-sm font-semibold uppercase tracking-wider mb-4" initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : {}} transition={{ delay: 0.2 }}>
             Features
@@ -213,7 +213,7 @@ function HowItWorks() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
         >
           <span className="inline-block text-[#ff7b54] text-sm font-semibold uppercase tracking-wider mb-4">Process</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">How It Works</h2>
@@ -229,7 +229,7 @@ function HowItWorks() {
                 ref={stepRef}
                 initial={{ opacity: 0, y: 40 }}
                 animate={stepInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] as const }}
                 className="relative p-7 rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08]"
               >
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#ff7b54] to-[#ff9f7a] flex items-center justify-center text-white font-bold text-lg mb-5 shadow-lg shadow-[#ff7b54]/20">
@@ -272,7 +272,7 @@ function Stats() {
               key={stat.label}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.5, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] as const }}
               className="text-center"
             >
               <div className="text-4xl mb-2">{stat.emoji}</div>
@@ -303,7 +303,7 @@ function TeamCard({ member, index }: { member: typeof team[0]; index: number }) 
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] as const }}
       whileHover={{ y: -8, transition: { duration: 0.2 } }}
       className="p-8 rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] hover:border-[#ff7b54]/30 transition-colors flex flex-col"
     >
@@ -338,7 +338,7 @@ function Team() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
         >
           <span className="inline-block text-[#ff7b54] text-sm font-semibold uppercase tracking-wider mb-4">The People Behind It</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Meet the Team</h2>
@@ -365,7 +365,7 @@ function CTA() {
           ref={ref}
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
           className="space-y-6"
         >
           <span className="text-5xl">🍳</span>
