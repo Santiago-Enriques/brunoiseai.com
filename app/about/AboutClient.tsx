@@ -19,10 +19,10 @@ const team = [
 ];
 
 const milestones = [
-  { year: '2022', title: 'The Idea', desc: 'Sofia and Daniel met at a nutrition hackathon. Frustrated by how generic existing apps were, they started sketching Brunoise AI.' },
-  { year: '2023', title: 'First Prototype', desc: 'Camille joined as the science backbone. The team built the first working macro tracker with AI meal suggestions.' },
-  { year: '2024', title: 'TestFlight Launch', desc: 'Marcus joined to craft the experience. Brunoise AI launched on TestFlight with 300+ recipes and food scanner.' },
-  { year: '2025', title: 'Growing Community', desc: 'Thousands of athletes and fitness enthusiasts joined, shaping the product with feedback and results.' },
+  { year: 'January 2025', title: 'The Idea', desc: 'Quail saw his cousin having problems in his intestines, which resulted in him not feeling well, and thus, his cousin got diagnosed with Celiac.' },
+  { year: 'January 2026', title: 'First Prototype', desc: 'The prototype started with the bare functions, premade meal plans, barely functioning food scanning. But it seemed like everything was going perfect, and it was!' },
+  { year: 'February 10, 2026', title: 'TestFlight Launch', desc: 'Then, it happened. Brunoise AI launched on TestFlight with 300+ recipes and food scanner.' },
+ // { year: '', title: 'Growing Community', desc: 'Thousands of athletes and fitness enthusiasts joined, shaping the product with feedback and results.' },
 ];
 
 export function AboutClient() {
