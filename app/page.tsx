@@ -133,7 +133,7 @@ function Hero() {
 
 // ─── Features ──────────────────────────────────────────────────────────────
 const features = [
-  { icon: Target, title: 'Goal-Based Meal Plans', desc: 'AI-powered daily meal plans that match your calorie and macro targets. Bulking, cutting, or maintaining — we got you.' },
+  { icon: Target, title: 'Goal-Based Meal Plans', desc: "AI-powered daily meal plans that match your calorie and macro targets. Bulking, cutting, or maintaining — we got you." },
   { icon: UtensilsCrossed, title: '300+ Global Recipes', desc: 'Authentic dishes from 15+ cuisines with step-by-step instructions and full nutritional breakdowns. Goodbye boring chicken.' },
   { icon: BarChart3, title: 'Macro Tracking', desc: 'Intelligent tracking that understands your goal. Higher protein for cuts, balanced macros for bulking — all auto-calculated.' },
   { icon: Camera, title: 'Food Scanner', desc: 'Snap a photo to identify ingredients and get instant nutritional info. AI-powered visual tracking that just works.' },
