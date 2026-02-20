@@ -287,8 +287,17 @@ function Stats() {
 }
 
 // ─── Team ──────────────────────────────────────────────────────────────────
+
+type TeamMember = {
+  name: string;
+  role: string;
+  bio: string;
+  initials: string;
+  gradient: string;
+};
+
 const team = [
-  { name: 'QuailR2', role: 'CEO & Lead Developer', bio: 'Raised from a hispanic background, Quail wants to reinvent the app store. He wants to do this step by step. He is starting off with a cooking app.', initials: 'Q2', gradient: 'from-[#110082] to-[#8C00FF]', linkedin: '#', twitter: '#' }
+  { name: 'QuailR2', role: 'CEO & Lead Developer', bio: 'Raised from a hispanic background, Quail wants to reinvent the app store. He wants to do this step by step. He is starting off with a cooking app.', initials: 'Q2', gradient: 'from-[#110082] to-[#8C00FF]' }
 ];
 
 function TeamCard({ member, index }: { member: typeof team[0]; index: number }) {
@@ -313,11 +322,6 @@ function TeamCard({ member, index }: { member: typeof team[0]; index: number }) 
       <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
       <p className="text-[#ff7b54] text-sm font-semibold mb-4">{member.role}</p>
       <p className="text-gray-400 text-sm leading-relaxed flex-1">{member.bio}</p>
-      <div className="flex gap-3 mt-6">
-        {member.linkedin && <a href={member.linkedin} className="w-9 h-9 rounded-lg bg-white/[0.06] hover:bg-[#ff7b54]/20 border border-white/[0.08] hover:border-[#ff7b54]/40 flex items-center justify-center text-gray-400 hover:text-[#ff7b54] transition-all"><Linkedin className="w-4 h-4" /></a>}
-        {member.twitter && <a href={member.twitter} className="w-9 h-9 rounded-lg bg-white/[0.06] hover:bg-[#ff7b54]/20 border border-white/[0.08] hover:border-[#ff7b54]/40 flex items-center justify-center text-gray-400 hover:text-[#ff7b54] transition-all"><Twitter className="w-4 h-4" /></a>}
-        {member.github && <a href={member.github} className="w-9 h-9 rounded-lg bg-white/[0.06] hover:bg-[#ff7b54]/20 border border-white/[0.08] hover:border-[#ff7b54]/40 flex items-center justify-center text-gray-400 hover:text-[#ff7b54] transition-all"><Github className="w-4 h-4" /></a>}
-      </div>
     </motion.div>
   );
 }
