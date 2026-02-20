@@ -20,11 +20,6 @@ type TeamMember = {
   bio: string;
   initials: string;
   gradient: string;
-  socials: {
-    linkedin?: string;
-    twitter?: string;
-    github?: string;
-  };
 };
 
 const team: TeamMember[] = [
